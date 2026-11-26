@@ -1,1 +1,11 @@
-/*    /index.html   200
+# Cloudflare Pages Single-Page Application (SPA) Configuration
+#
+# Client-side routing (React Router) for direct page navigation and refresh
+# (e.g. /properties, /properties/:id, /admin, /admin/properties) is handled
+# natively by Cloudflare Pages:
+# - When no top-level 404.html exists in the output directory, Cloudflare Pages
+#   automatically falls back to serving /index.html (200 OK) for all non-file requests.
+#
+# Note: Do not declare `/* /index.html 200` here. Cloudflare's Wrangler deployment
+# validator flags wildcard rewrites targeting /index or /index.html as recursive
+# infinite loops (Error code: 100324) due to automatic clean-URL extension stripping.
