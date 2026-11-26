@@ -1,0 +1,14 @@
+# Supabase Local Configuration for AMMAN REAL ESTATE
+project_id = "pyjmxluvvykrmvbtirqp"
+
+[functions.b2-image-view]
+verify_jwt = false
+
+[functions.b2-upload-url]
+verify_jwt = true
+
+[functions.b2-confirm-upload]
+verify_jwt = true
+
+[functions.b2-delete-image]
+verify_jwt = true

@@ -1,0 +1,53 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Frontend Build
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment variables & secrets (Strict Security)
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.cert
+*.crt
+!.env.example
+!**/.env.example
+
+# Supabase Local Cache & CLI Temp
+supabase/.temp/
+.temp/
+
+# Temporary diagnostics & local scratch tools
+b2-diagnostic.html
+
+# Backend Build & Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+backend/target/
+.mvn/
+*.flattened-pom.xml
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
