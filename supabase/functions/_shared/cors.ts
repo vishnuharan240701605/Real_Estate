@@ -6,7 +6,7 @@ const ALLOWED_ADMIN_ORIGINS = [
   'http://localhost:5173',
   'http://127.0.0.1:5173',
   'http://localhost:3000',
-  // Confirmed production domain(s) can be added here when deployment domain is confirmed
+  'https://amman-real-estate.vishnuharantnj123.workers.dev',
 ];
 
 /**

@@ -263,9 +263,9 @@ export const PropertyImageManager: React.FC<PropertyImageManagerProps> = ({
             prev.map((i) => (i.id === itemId ? { ...i, status: 'uploading_b2' } : i))
           );
 
-          const putRes = await imageService.uploadBinaryToB2ViaArrayBuffer(uploadUrl, file);
+          const putRes = await imageService.uploadBinaryToB2(uploadUrl, file);
           if (!putRes.success) {
-            throw new Error(`[Step 2: B2 PUT ArrayBuffer] ${putRes.error || 'Failed to upload image binary to Backblaze B2.'}`);
+            throw new Error(`[Step 2: B2 PUT Upload] ${putRes.error || 'Failed to upload image binary to Backblaze B2.'}`);
           }
 
           // Step 3: Server-side validation and DB insertion
